@@ -18,18 +18,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
-  };
+
 
   return (
     <div data-aos="zoom-in" className={isDark ? "experience-card-dark" : "experience-card"}>
@@ -64,9 +53,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.desc}
         </p>
-        {/* <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul> */}
+      
         <div className="btn__container">
         <Button text="Demo" link={cardInfo.demolink}/>
         <Button text="Code" link={cardInfo.codelink}/>
