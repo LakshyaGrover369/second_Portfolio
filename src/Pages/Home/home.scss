@@ -1,0 +1,234 @@
+@use '../sharedStyles//common.scss' as com;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+////////////////////////////////hero section ///////////////////////////////
+
+#heroSection{
+    margin-top: 1rem; 
+}
+
+
+.hero__content{
+    padding-top: 1rem; 
+    border: 2px sloid green;
+    @include com.centerThing;
+}
+
+.hero__img{
+    @include com.centerThing;
+    img{
+        height: 60%;
+        width: 60%;
+    }
+}
+
+                    ///////////////////button /////////////////
+    .buttons{
+        display: flex;
+        width: 50%;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:100');
+    @mixin button($bcolor,
+    $url,
+    $x1,
+    $y1,
+    $bor,
+    $col) {
+        background: $bcolor;
+        -webkit-mask: url($url);
+        mask: url($url);
+        -webkit-mask-size: $x1 $y1;
+        mask-size: $x1 $y1;
+        border: $bor;
+        color: $col;
+    }
+    
+    .button-container-1 {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6vh;
+        overflow: hidden;
+        border: 1px solid;
+        font-weight: 300;
+        font-size: 20px;
+        transition: 0.5s;
+        letter-spacing: 1px;
+        border-radius: 8px;
+    
+        button {
+        width: 101%;
+        height: 100%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 11px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    
+        @include button(#000,
+        "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+        2300%,
+        100%,
+        none,
+        #fff);
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+    
+        &:hover {
+        -webkit-animation: ani 0.7s steps(22) forwards;
+        animation: ani 0.7s steps(22) forwards;
+        }
+        }
+    }
+    
+    .mas {
+        position: absolute;
+        color: #000;
+        text-align: center;
+        width: 101%;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        position: absolute;
+        font-size: 11px;
+        margin-top: 17px;
+        overflow: hidden;
+            font-weight: bold;
+    
+    }
+    
+    @-webkit-keyframes ani {
+        from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+        }
+    
+        to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+        }
+    }
+    
+    @keyframes ani {
+        from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+        }
+    
+        to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+        }
+    }
+    
+/////////////////////////////////skill section /////////////////////
+
+.skill__subHeading{
+    font-weight: bold;
+    font-size:1.30rem;
+    font-family: cursive;
+    
+}
+
+.skill__section{
+    margin: 0 0 0 0;
+    padding: 300px 0 0 0 !important;
+}
+
+.skillSection__img{
+    @include com.centerThing;
+    img{
+        width:100%;
+        height:100%;
+    }
+}
+
+.skills__list>ul{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+//////////////////////////////// education section////////////////////////
+
+.educations{
+    box-shadow: 0px 5px 10px rgb(179, 178, 178);
+}
+
+.college__Img , .school__Img{
+    height: fit-content;
+    width: auto;
+    border-radius: 50%;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+//////////////////////////////// Projects section////////////////////////
+
+.experience-cards-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project__Container{
+    height: max-content;
+}
+
+.projectss{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+//////////////////////////////////media screen 
+/// 
+
+@media screen and (max-width: 576px){
+    .buttons{
+        width: 100%;
+    }
+}
+@media sreen and (min-width: 1000px){
+    .college__Img , .school__Img{
+        height: 100%;
+        width: 30%;
+        img{
+            width: 10%;
+            height: 10%;
+        }
+    }
+    .skill__heading2{
+        display: block;
+    }
+    .skill__heading1{
+        display: none;
+    }
+    .heroResponsive{
+        flex-direction: column-reverse;
+    }
+}
+// @media sreen and (min-width: 1000px){
+    
+    
+//     #skill__Heading1{
+//         display: none !important;
+//     }
+// }
