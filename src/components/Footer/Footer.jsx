@@ -1,7 +1,6 @@
 import React from 'react';
 import "./footer.css";
 import contact__img from '../../assets/videoAnimations/contact.gif';
-// import leetcode__img from '../../assets/images/leetcode.png';
 
 import { Container , Row , Col , ListGroup , ListGroupItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
@@ -9,15 +8,15 @@ import { Link } from 'react-router-dom';
 
 const quick__links=[
   {
-    path:'/home',
+    path:'#home',
     display:'Home'
   },
   {
-    path:'/skills',
+    path:'#skills',
     display:'Skills'
   },
   {
-    path:'/rojects',
+    path:'#rojects',
     display:'Projects'  
   },
   
@@ -62,7 +61,6 @@ const Footer = () => {
             
           </Col>
           <Col lg='3'>
-          {/* <h5 className="footer__link-title">Quick Links</h5> */}
           <img className='contact__img' src={contact__img} alt="" />
          
           </Col>
@@ -77,7 +75,7 @@ const Footer = () => {
                       Address:
                     </span>
                   </h6>
-                  <p className="mb-0">Rohini, Delhi, India</p>
+                  <p className="mb-0"> Delhi, India</p>
                 </ListGroupItem>
                 <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
                   <h6 className='mb-0 d-flex align-items-center gap-2'>

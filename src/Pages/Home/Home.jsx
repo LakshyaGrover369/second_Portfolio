@@ -19,7 +19,6 @@ import InfoText from '../../components/Headings/InfoText';
 import Projects from '../../components/experienceCard/ExperienceCard'
 
 import React,{useEffect} from "react";
-// importing aos
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -30,30 +29,10 @@ const workExperiences = {
   experience: [
     {
       role: "Front-End Technology",
-      name: "Live Covid Tracker",
-      companylogo: require("../../assets/images/site5img.png"),
-      date: "March 2023 – March 2023",
-      desc: "A React Js based website that Shows the live cases of the corona virus cases in our country INDIA ",
-      demolink:"https://livecovidcasestracker.netlify.app/",
-      codelink:"https://github.com/LakshyaGrover369/live-covid-tracker",
-      
-    },
-    {
-      role: "Front-End Technology",
-      name: "Quiz Web App",
-      companylogo: require("../../assets/images/site4img.png"),
-      date: "June 2021 – June 2021",
-      desc: "A website that take quizez for different technologies and shows your result and overall performance ",
-      demolink:"https://quizzoi.netlify.app/",
-      codelink:"https://github.com/LakshyaGrover369/Quiz_website.git"
-      
-    },
-    {
-      role: "Front-End Technology",
       name: "Random Quote Generator",
       companylogo: require("../../assets/images/site1img.jpg"),
       date: "September 2021 – September 2021",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Get inspired with a click! Our random quote generator delivers wisdom, humor, and motivation instantly.",
       demolink:"https://inspiquote.netlify.app/",
       codelink:"https://github.com/LakshyaGrover369/quote-of-the-day.git"
     },
@@ -62,9 +41,9 @@ const workExperiences = {
       name: "Parking Lot",
       companylogo: require("../../assets/images/site2img.png"),
       date: "June 2021 – June 2021",
-      desc: "An admin accesssed Parking Lot System that can track the numbers cars and their details",
-      demolink:"https://inspiquote.netlify.app/",
-      codelink:"https://github.com/LakshyaGrover369/quote-of-the-day.git"
+      desc: "Efficient, user-friendly website for seamless parking lot management, maximizing space utilization and enhancing customer experience",
+      demolink:"https://simplewayofparking.netlify.app/",
+      codelink:"https://github.com/LakshyaGrover369/parking-lot"
     
     },
     {
@@ -72,9 +51,30 @@ const workExperiences = {
       name: "Word Counter",
       companylogo: require("../../assets/images/site3img.png"),
       date: "May 2021 – May 2021",
-      desc: "A website that can tell you about your articles that can help you to optimize your article",
-      demolink:"https://inspiquote.netlify.app/",
-      codelink:"https://github.com/LakshyaGrover369/quote-of-the-day.git"
+      desc: "Quickly count words online with a user-friendly tool for efficient writing and content management",
+      demolink:"https://wordscounti.netlify.app/",
+      codelink:"https://github.com/LakshyaGrover369/word-counter"
+    },
+    
+    {
+      role: "Front-End Technology",
+      name: "Quiz Web App",
+      companylogo: require("../../assets/images/site4img.png"),
+      date: "June 2021 – June 2021",
+      desc: "Interactive quiz web app: Engaging, educational, diverse topics, user-friendly, real-time feedback, shareable results, endless fun. Try today!",
+      demolink:"https://quizzoi.netlify.app/",
+      codelink:"https://github.com/LakshyaGrover369/Quiz_website.git"
+      
+    },
+    {
+      role: "Front-End Technology",
+      name: "Live Covid Tracker",
+      companylogo: require("../../assets/images/site5img.png"),
+      date: "March 2023 – March 2023",
+      desc: "Real-time COVID-19 data: cases, vaccines, trends. Stay informed, stay safe with our user-friendly tracker.",
+      demolink:"https://livecovidcasestracker.netlify.app/",
+      codelink:"https://github.com/LakshyaGrover369/live-covid-tracker",
+      
     },
   ]
 };
