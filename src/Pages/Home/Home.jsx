@@ -184,12 +184,12 @@ const Home = () => {
       {/* /////////////////////////education section start////////////////////////// */}
 
       <section id='educationSection'>
-        <Container>
+        <Container className='educationWith'>
         <MainHeadings text=" EDUCATION" />
-          <Row>
+          <Row className='d-flex justify-content-center align-items-center'>
               <Row className='my-3 educations'>
                 <Col lg='2'>
-                  <div className='college__Img'>
+                  <div  data-aos="zoom-out" className='college__Img'>
                     <img src={collegeImg} alt="" />
                   </div>
                 </Col>
@@ -202,7 +202,7 @@ const Home = () => {
               </Row>
               <Row className='my-3 educations'>
                 <Col lg='2'>
-                <div className='school__Img'>
+                <div  data-aos="zoom-out" className='school__Img'>
                     <img src={schoolImg} alt="" />
                   </div>
                 </Col>

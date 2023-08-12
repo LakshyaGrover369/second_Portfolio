@@ -132,6 +132,11 @@
     
 /////////////////////////////////skill section /////////////////////
 
+
+#skillSection{
+    border-top: 1px dotted black;
+}
+
 .skill__subHeading{
     font-weight: bold;
     font-size:1.30rem;
@@ -162,6 +167,14 @@
 
 //////////////////////////////// education section////////////////////////
 
+#educationSection{
+    border-top: 1px dotted black;
+}
+
+.educationWith{
+    width: 90% !important;
+}
+
 .educations{
     box-shadow: 0px 5px 10px rgb(179, 178, 178);
 }
@@ -176,6 +189,10 @@
     }
 }
 //////////////////////////////// Projects section////////////////////////
+
+#projectSection{
+    border-top: 1px dotted black;
+}
 
 .experience-cards-div{
     width: 100%;
