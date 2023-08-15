@@ -83,7 +83,7 @@ const OpenContactMe = () => {
   window.open('https://wa.link/y3lbdr','_blank');
 }
 const OpenMyResume = () => {
-  window.open('https://drive.google.com/file/d/17IDt-yxfmf3TYD50-O1h_FGhunAEuBxd/view?usp=sharing','_blank');
+  window.open('https://drive.google.com/file/d/1z4YvXzXVCFN56P9snFT2RiSVbuc6PS5B/view?usp=sharing','_blank');
 }
 
 const Home = () => {
