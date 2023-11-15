@@ -33,15 +33,6 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Front-End Technology",
-      name: "Random Quote Generator",
-      companylogo: require("../../assets/images/site1img.jpg"),
-      date: "September 2021 – September 2021",
-      desc: "Get inspired with a click! Our random quote generator delivers wisdom, humor, and motivation instantly.",
-      demolink:"https://inspiquote.netlify.app/",
-      codelink:"https://github.com/LakshyaGrover369/quote-of-the-day.git"
-    },
-    {
       role: "Full Stack Technology",
       name: "Library Management Sytem",
       companylogo: require("../../assets/images/site_lms.png"),
@@ -49,6 +40,24 @@ const workExperiences = {
       desc: "Stay organized and efficient with our powerful LMS, designed to streamline your library workflow.",
       demolink:"https://github.com/LakshyaGrover369/library-management",
       codelink:"https://github.com/LakshyaGrover369/library-management"
+    },
+    {
+      role: "Front-End Technology",
+      name: "travel World",
+      companylogo: require("../../assets/images/site_tour_web.png"),
+      date: "July 2023 – August 2023",
+      desc: "Explore the world with us , Experience the beauty of travel with our unforgettable tours.",
+      demolink:"https://touroftheworld.netlify.app/",
+      codelink:"https://github.com/LakshyaGrover369/tour_world_app"
+    },
+    {
+      role: "Front-End Technology",
+      name: "Random Quote Generator",
+      companylogo: require("../../assets/images/site1img.jpg"),
+      date: "September 2021 – September 2021",
+      desc: "Get inspired with a click! Our random quote generator delivers wisdom, humor, and motivation instantly.",
+      demolink:"https://inspiquote.netlify.app/",
+      codelink:"https://github.com/LakshyaGrover369/quote-of-the-day.git"
     },
     {
       role: "Front-End Technology",
