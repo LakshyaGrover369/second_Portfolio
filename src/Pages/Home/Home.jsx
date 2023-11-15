@@ -6,12 +6,17 @@ import collegeImg from '../../assets/images/college.jpg'
 import schoolImg from '../../assets/images/school.jpg'
 import skillsImg from '../../assets/videoAnimations/skills.gif'
 
-import reactjs from '../../assets//icons/reactjs.gif'
-import javascript from '../../assets//icons/javascript.gif'
-import html from '../../assets//icons/html.png'
-import css from '../../assets//icons/css.png'
-import bootstrap from '../../assets//icons/bootstrap.png'
-import sass from '../../assets//icons/sass.png'
+
+
+import nodejs from '../../assets//icons/node_logo.gif';
+import expressjs from '../../assets//icons/express_logo.gif';
+import git from '../../assets//icons/git_logo.gif';
+import reactjs from '../../assets//icons/react_logo.gif';
+import javascript from '../../assets//icons/js_logo.gif';
+import html from '../../assets//icons/html_logio.gif';
+import css from '../../assets//icons/css_logo.gif';
+import bootstrap from '../../assets//icons/bootstrap_logo.gif';
+import sass from '../../assets//icons/sass.png';
 
 import MainHeadings from '../../components/Headings/MainHeadings';
 import SubHeadings from '../../components/Headings/SubHeadings';
@@ -22,7 +27,7 @@ import React,{useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const skillsIcon__links=[reactjs,javascript,sass,bootstrap,css,html]
+const skillsIcon__links=[nodejs,expressjs,reactjs,javascript,sass,bootstrap,css,html,git]
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
@@ -35,6 +40,15 @@ const workExperiences = {
       desc: "Get inspired with a click! Our random quote generator delivers wisdom, humor, and motivation instantly.",
       demolink:"https://inspiquote.netlify.app/",
       codelink:"https://github.com/LakshyaGrover369/quote-of-the-day.git"
+    },
+    {
+      role: "Full Stack Technology",
+      name: "Library Management Sytem",
+      companylogo: require("../../assets/images/site_lms.png"),
+      date: "September 2023 – October 2023",
+      desc: "Stay organized and efficient with our powerful LMS, designed to streamline your library workflow.",
+      demolink:"https://github.com/LakshyaGrover369/library-management",
+      codelink:"https://github.com/LakshyaGrover369/library-management"
     },
     {
       role: "Front-End Technology",
@@ -114,9 +128,9 @@ const Home = () => {
                   {/* <img style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;" alt="👋" draggable="false" src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png" /> */}
                 </div>
                 <InfoText text="
-                A passionate Front End Developer 🚀 
-                having an experience of building Web and Mobile applications 
-                with JavaScript / Reactjs / Nodejs / React Native and some
+                A passionate Full Stack Developer 🚀 
+                having an experience of building Web applications 
+                with JavaScript / Reactjs / Nodejs and some
                  other cool libraries and frameworks.
                 " />
                 <div className="buttons">
@@ -155,13 +169,14 @@ const Home = () => {
               <Row>
               {/* <div id='skill__Heading1' ><MainHeadings  text="SKILLS" /></div> */}
                 <SubHeadings text="What I Do " />
-                <div className='skill__subHeading '> CRAZY FRONT END DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK </div>
+                <div className='skill__subHeading '> CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK </div>
                 <div className="lang">
                 <div className="skills__list">
                   <ul className="menu d-flex align-items-center ">
                     {skillsIcon__links.map((item, index)=> (
-                      <li className="skillsIcon__links" key={index}>
+                      <li className="skillsIcon__links" key={index} >
                         <img 
+                        height='50px'
                           src={item} 
                           className="skillsIcon__links" 
                           alt=""
@@ -172,6 +187,7 @@ const Home = () => {
                 </div>
                 </div>
                 <InfoText text="⚡ Develop highly interactive Front end / User Interfaces for your web." />
+                <InfoText text="⚡ Develop optimised Back end for your web." />
                 <InfoText text="⚡ Translate design concepts into live websites abd web applications." />
                 <InfoText text="⚡ optimizes interfaces for speed, responsiveness and cross-browser compatibility." />
                 
