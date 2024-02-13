@@ -106,7 +106,7 @@ const OpenContactMe = () => {
   window.open('https://wa.link/y3lbdr','_blank');
 }
 const OpenMyResume = () => {
-  window.open('https://drive.google.com/file/d/10s00QBmwj4eIfa867C-0L5nJgNAgzt5s/view?usp=sharing','_blank');
+  window.open('https://drive.google.com/file/d/1J5dNExvCEd_B3hXX-DWes67r4VuBoQ2S/view?usp=sharing','_blank');
 }
 
 const Home = () => {
