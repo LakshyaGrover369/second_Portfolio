@@ -1,9 +1,9 @@
-import React, {useState, createRef} from "react";
-import "./ExperienceCard.scss";
+import React, { useState, createRef } from "react";
+import "./ProjectCard.scss";
 import ColorThief from "colorthief";
-import Button from "./button/Button"
+import Button from "./button/Button";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ProjectCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -18,11 +18,15 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-
-
   return (
-    <div data-aos="zoom-in" className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+    <div
+      data-aos="zoom-in"
+      className={isDark ? "experience-card-dark" : "experience-card"}
+    >
+      <div
+        style={{ background: rgb(colorArrays) }}
+        className="experience-banner"
+      >
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
@@ -38,26 +42,14 @@ export default function ExperienceCard({cardInfo, isDark}) {
         />
       </div>
       <div className="experience-text-details">
-        <h5
-          className={"experience-text-role"}
-        >
-          {cardInfo.role}
-        </h5>
-        <h5
-          className={"experience-text-date"}
-        >
-          {cardInfo.date}
-        </h5>
-        <p
-          className={ "subTitle experience-text-desc"}
-        >
-          {cardInfo.desc}
-        </p>
-      
+        <h5 className={"experience-text-role"}>{cardInfo.role}</h5>
+        <h5 className={"experience-text-date"}>{cardInfo.date}</h5>
+        <p className={"subTitle experience-text-desc"}>{cardInfo.desc}</p>
+
         <div className="btn__container">
-        <Button text="Demo" link={cardInfo.demolink}/>
-        <Button text="Code" link={cardInfo.codelink}/>
-      </div>
+          <Button text="Demo" link={cardInfo.demolink} />
+          <Button text="Code" link={cardInfo.codelink} />
+        </div>
       </div>
     </div>
   );

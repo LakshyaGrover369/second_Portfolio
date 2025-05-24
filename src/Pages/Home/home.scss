@@ -1,251 +1,423 @@
-@use '../sharedStyles//common.scss' as com;
+@use "../sharedStyles//common.scss" as com;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ////////////////////////////////hero section ///////////////////////////////
 
-#heroSection{
-    margin-top: 1rem; 
+#heroSection {
+  margin-top: 1rem;
 }
 
-
-.hero__content{
-    padding-top: 1rem; 
-    border: 2px sloid green;
-    @include com.centerThing;
+.hero__content {
+  padding-top: 1rem;
+  border: 2px sloid green;
+  @include com.centerThing;
 }
 
-.hero__img{
-    @include com.centerThing;
-    img{
-        height: 60%;
-        width: 60%;
-    }
+.hero__img {
+  @include com.centerThing;
+  img {
+    height: 60%;
+    width: 60%;
+  }
 }
 
-                    ///////////////////button /////////////////
-    .buttons{
-        display: flex;
-        width: 50%;
-    }
+///////////////////button /////////////////
+.buttons {
+  display: flex;
+  width: 50%;
+}
 
-    @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
-    @import url('https://fonts.googleapis.com/css?family=Roboto:100');
-    @mixin button($bcolor,
-    $url,
-    $x1,
-    $y1,
-    $bor,
-    $col) {
-        background: $bcolor;
-        -webkit-mask: url($url);
-        mask: url($url);
-        -webkit-mask-size: $x1 $y1;
-        mask-size: $x1 $y1;
-        border: $bor;
-        color: $col;
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
+}
+
+.button-container-1 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  overflow: hidden;
+  border: 1px solid;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+    @include button(
+      #000,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+      2300%,
+      100%,
+      none,
+      #fff
+    );
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
     }
-    
-    .button-container-1 {
-        position: relative;
-        width: 100px;
-        height: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 6vh;
-        overflow: hidden;
-        border: 1px solid;
-        font-weight: 300;
-        font-size: 20px;
-        transition: 0.5s;
-        letter-spacing: 1px;
-        border-radius: 8px;
-    
-        button {
-        width: 101%;
-        height: 100%;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 11px;
-        letter-spacing: 1px;
-        font-weight: bold;
-    
-        @include button(#000,
-        "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
-        2300%,
-        100%,
-        none,
-        #fff);
-        cursor: pointer;
-        -webkit-animation: ani2 0.7s steps(22) forwards;
-        animation: ani2 0.7s steps(22) forwards;
-    
-        &:hover {
-        -webkit-animation: ani 0.7s steps(22) forwards;
-        animation: ani 0.7s steps(22) forwards;
-        }
-        }
-    }
-    
-    .mas {
-        position: absolute;
-        color: #000;
-        text-align: center;
-        width: 101%;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        position: absolute;
-        font-size: 11px;
-        margin-top: 17px;
-        overflow: hidden;
-            font-weight: bold;
-    
-    }
-    
-    @-webkit-keyframes ani {
-        from {
-        -webkit-mask-position: 0 0;
-        mask-position: 0 0;
-        }
-    
-        to {
-        -webkit-mask-position: 100% 0;
-        mask-position: 100% 0;
-        }
-    }
-    
-    @keyframes ani {
-        from {
-        -webkit-mask-position: 0 0;
-        mask-position: 0 0;
-        }
-    
-        to {
-        -webkit-mask-position: 100% 0;
-        mask-position: 100% 0;
-        }
-    }
-    
+  }
+}
+
+.mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 11px;
+  margin-top: 17px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
 /////////////////////////////////skill section /////////////////////
 
-
-#skillSection{
-    border-top: 1px dotted black;
+#skillSection {
+  border-top: 1px dotted black;
 }
 
-.skill__subHeading{
-    font-weight: bold;
-    font-size:1.30rem;
-    font-family: cursive;
-    
+.skill__subHeading {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: cursive;
 }
 
-.skill__section{
-    margin: 0 0 0 0;
-    padding: 300px 0 0 0 !important;
+.skill__section {
+  margin: 0 0 0 0;
+  padding: 300px 0 0 0 !important;
 }
 
-.skillSection__img{
-    @include com.centerThing;
-    img{
-        width:100%;
-        height:100%;
+.skillSection__img {
+  @include com.centerThing;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.skills__list > ul {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+//////////////////////////////// Work Expirence section////////////////////////
+/* Work Experience Section */
+#workExperience {
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4f46e5, #10b981, #f59e0b);
+    z-index: 1;
+  }
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  &-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+
+    &.left {
+      left: 0;
+      text-align: right;
+      padding-right: 70px;
+
+      .timeline-panel {
+        &::before {
+          right: -15px;
+          border-width: 15px 0 15px 15px;
+          border-color: transparent transparent transparent #fff;
+        }
+      }
     }
-}
 
-.skills__list>ul{
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap;
-    justify-content: center;
+    &.right {
+      left: 50%;
+      text-align: left;
+      padding-left: 70px;
+
+      .timeline-panel {
+        &::before {
+          left: -15px;
+          border-width: 15px 15px 15px 0;
+          border-color: transparent #fff transparent transparent;
+        }
+      }
+    }
+  }
+
+  &-badge {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .left & {
+      right: -25px;
+    }
+
+    .right & {
+      left: -25px;
+    }
+  }
+
+  &-icon {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  &-panel {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+  }
+
+  &-title {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #2d3748;
+  }
+
+  &-role {
+    font-size: 1rem;
+    color: #718096;
+    font-weight: normal;
+  }
+
+  &-duration {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  &-list {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      line-height: 1.5;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #4f46e5;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 //////////////////////////////// education section////////////////////////
 
-#educationSection{
-    border-top: 1px dotted black;
+#educationSection {
+  border-top: 1px dotted black;
 }
 
-.educationWith{
-    width: 90% !important;
+.educationWith {
+  width: 90% !important;
 }
 
-.educations{
-    box-shadow: 0px 5px 10px rgb(179, 178, 178);
+.educations {
+  box-shadow: 0px 5px 10px rgb(179, 178, 178);
 }
 
-.college__Img , .school__Img{
-    height: fit-content;
-    width: auto;
-    border-radius: 50%;
-    img{
-        width: 100%;
-        height: 100%;
-    }
+.college__Img,
+.school__Img {
+  height: fit-content;
+  width: auto;
+  border-radius: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 //////////////////////////////// Projects section////////////////////////
 
-#projectSection{
-    border-top: 1px dotted black;
+#projectSection {
+  border-top: 1px dotted black;
 }
 
-.experience-cards-div{
+.experience-cards-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project__Container {
+  height: max-content;
+}
+
+.projectss {
+  padding: 10px;
+}
+
+//////////////////////////////////media screen
+///
+
+@media screen and (max-width: 576px) {
+  .buttons {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  }
 }
-.project__Container{
-    height: max-content;
-}
-
-.projectss{
-    padding: 10px;
-}
-
-
-
-
-
-
-
-//////////////////////////////////media screen 
-/// 
-
-@media screen and (max-width: 576px){
-    .buttons{
-        width: 100%;
+@media sreen and (min-width: 1000px) {
+  .college__Img,
+  .school__Img {
+    height: 100%;
+    width: 30%;
+    img {
+      width: 10%;
+      height: 10%;
     }
-}
-@media sreen and (min-width: 1000px){
-    .college__Img , .school__Img{
-        height: 100%;
-        width: 30%;
-        img{
-            width: 10%;
-            height: 10%;
-        }
-    }
-    .skill__heading2{
-        display: block;
-    }
-    .skill__heading1{
-        display: none;
-    }
-    .heroResponsive{
-        flex-direction: column-reverse;
-    }
+  }
+  .skill__heading2 {
+    display: block;
+  }
+  .skill__heading1 {
+    display: none;
+  }
+  .heroResponsive {
+    flex-direction: column-reverse;
+  }
 }
 // @media sreen and (min-width: 1000px){
-    
-    
+
 //     #skill__Heading1{
 //         display: none !important;
 //     }
-// }
+// }\
+
+/* Responsive */
+@media (max-width: 768px) {
+  #workExperience {
+    &::before {
+      left: 31px;
+    }
+  }
+
+  .timeline {
+    &-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      text-align: left;
+
+      &.left,
+      &.right {
+        left: 0;
+        text-align: left;
+        padding-right: 25px;
+        padding-left: 70px;
+      }
+
+      &.left .timeline-panel::before {
+        left: -15px;
+        right: auto;
+        border-width: 15px 15px 15px 0;
+        border-color: transparent #fff transparent transparent;
+      }
+    }
+
+    &-badge {
+      left: 6px !important;
+      right: auto !important;
+    }
+  }
+}
