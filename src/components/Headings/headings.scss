@@ -1,14 +1,72 @@
+// Font imports (add these to your main CSS file or HTML head)
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;600&display=swap");
 
-.TopHeading{
-    font-family: 'Sacramento', cursive;
-    font-weight: bolder;
-    // color: white;
+.TopHeading {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; // Bold but professional
+  font-size: 2.5rem; // Adjust as needed
+  line-height: 1.2;
+  color: #2d3748; // Professional dark color
+  margin-bottom: 1rem;
+
+  // Optional decorative underline
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #4f46e5; // Accent color
+    margin: 0.5rem 0 1.5rem;
+  }
 }
-.SubHeading{
-    font-family: 'Parisienne', cursive;
-    // color: white;
+
+.SubHeading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; // Semi-bold
+  font-size: 1.5rem;
+  color: #4a5568; // Slightly lighter than heading
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
 }
-.InfoText{
-    font-family: 'Caveat', cursive;
-    // color: white;
+
+.InfoText {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+
+  // For highlighted text
+  &.highlight {
+    font-weight: 600;
+    color: #2d3748;
+  }
+}
+
+// Additional professional typography classes
+.SectionTitle {
+  @extend .TopHeading;
+  font-size: 2rem;
+  text-align: center;
+
+  &::after {
+    margin: 0.5rem auto 2rem;
+  }
+}
+
+.CardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+
+.MetaText {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #718096;
+  letter-spacing: 0.3px;
 }

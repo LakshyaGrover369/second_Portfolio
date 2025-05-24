@@ -15,6 +15,8 @@ import html from "../../assets//icons/html_logio.gif";
 import css from "../../assets//icons/css_logo.gif";
 import bootstrap from "../../assets//icons/bootstrap_logo.gif";
 import sass from "../../assets//icons/sass.png";
+import csharp from "../../assets//icons/csharp_logo.gif";
+import mongo from "../../assets//icons/mongo_logo.gif";
 
 import MainHeadings from "../../components/Headings/MainHeadings";
 import SubHeadings from "../../components/Headings/SubHeadings";
@@ -26,6 +28,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const skillsIcon__links = [
+  csharp,
+  mongo,
   nodejs,
   expressjs,
   reactjs,
