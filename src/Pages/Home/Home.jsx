@@ -91,6 +91,15 @@ const Projects = {
   experience: [
     {
       role: "Full Stack Technology",
+      name: "ConnectHQ - Volunteer Call Management",
+      companylogo: require("../../assets/images/site_call.png"),
+      date: "April 2025 – May 2025",
+      desc: "A centralized system for managing volunteer activities, tracking call interactions, and monitoring performance with admin oversight.",
+      demolink: "https://connect-hq.vercel.app/",
+      codelink: "https://github.com/LakshyaGrover369/Capture_Call_Frontend",
+    },
+    {
+      role: "Full Stack Technology",
       name: "Library Management Sytem",
       companylogo: require("../../assets/images/site_lms.png"),
       date: "September 2023 – October 2023",
